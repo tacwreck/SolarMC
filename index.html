@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Background -->
   <div class="overlay"></div>
   <div class="content">
     <!-- Logo -->
-    <img src="IMG_3537.png" alt="SolarMC Logo" class="logo">
+    <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
 
     <h1>SolarMC – Server Request</h1>
     <p>
@@ -21,12 +22,14 @@
     </p>
 
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="request-form">
+      <!-- Minecraft Edition -->
       <label>Minecraft Edition:</label>
       <select name="edition" required>
         <option value="java">Java</option>
         <option value="bedrock">Bedrock</option>
       </select>
 
+      <!-- Server Type -->
       <label>Server Type:</label>
       <select name="type" required>
         <option value="paper">Paper</option>
@@ -38,6 +41,7 @@
         <option value="purpur">Purpur</option>
       </select>
 
+      <!-- Version -->
       <label>Version:</label>
       <select name="version" required>
         <!-- 1.16.x -->
@@ -106,9 +110,11 @@
         <option value="1.21.8">1.21.8 (Latest)</option>
       </select>
 
+      <!-- Plugins/Mods -->
       <label>Plugins / Mods / Resource Packs:</label>
       <textarea name="extras" rows="4" placeholder="List any plugins, mods, or packs you want installed"></textarea>
 
+      <!-- Email -->
       <label>Email Address:</label>
       <input type="email" name="email" required>
 
