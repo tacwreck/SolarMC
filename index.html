@@ -12,9 +12,6 @@
     <!-- Corrected Logo Path -->
     <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
 
-    <!-- Dark/Light mode toggle -->
-    <button id="theme-toggle">🌙 Dark Mode</button>
-
     <h1>SolarMC – Server Request</h1>
     <p>
       We’re a small team of just 5 people. Emails won’t be delivered immediately 
@@ -129,15 +126,5 @@
       <button type="submit">Submit Request</button>
     </form>
   </div>
-
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      toggleBtn.textContent = document.body.classList.contains('light-mode') 
-        ? '☀️ Light Mode' 
-        : '🌙 Dark Mode';
-    });
-  </script>
 </body>
 </html>
