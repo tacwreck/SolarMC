@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolarMC – Request a Server</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>SolarMC – Server Request</h1>
+    <p>
+      We’re a small team of just 5 people. Emails won’t be delivered immediately 
+      because we also have to live our lives.  
+      For faster support, please use our 
+      <a href="YOUR_DISCORD_LINK" target="_blank">Discord server</a>.
+    </p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="request-form">
+      <label>Minecraft Edition:</label>
+      <select name="edition" required>
+        <option value="java">Java</option>
+        <option value="bedrock">Bedrock</option>
+      </select>
+
+      <label>Server Type:</label>
+      <select name="type" required>
+        <option value="paper">Paper</option>
+        <option value="spigot">Spigot</option>
+        <option value="bukkit">Bukkit</option>
+        <option value="forge">Forge</option>
+        <option value="fabric">Fabric</option>
+        <option value="vanilla">Vanilla</option>
+      </select>
+
+      <label>Version:</label>
+      <select name="version" required>
+        <option value="1.16.5">1.16.5</option>
+        <option value="1.17">1.17</option>
+        <option value="1.18">1.18</option>
+        <option value="1.19">1.19</option>
+        <option value="1.20">1.20</option>
+        <option value="1.21">1.21</option>
+        <option value="1.21.8">1.21.8</option>
+      </select>
+
+      <label>Plugins / Mods / Resource Packs:</label>
+      <textarea name="extras" rows="4" placeholder="List any plugins, mods, or packs you want installed"></textarea>
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</body>
+</html>
