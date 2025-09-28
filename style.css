@@ -12,8 +12,9 @@ body {
   background-size: cover;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Overlay */
@@ -38,7 +39,8 @@ body {
   color: #fff;
   text-align: center;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  border: 2px solid rgba(255, 255, 255, 0.08); /* UIStroke */
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  margin-top: 100px;
 }
 
 /* Logo */
@@ -87,7 +89,7 @@ p {
   font-size: 0.95rem;
   outline: none;
   transition: border 0.3s, background 0.3s;
-  appearance: none; /* Remove iOS dropdown default */
+  appearance: none;
 }
 
 /* Placeholder */
@@ -179,7 +181,6 @@ button:active,
   font-size: 1rem;
 }
 
-/* Navbar Links Style */
 .navbar a {
   color: #fff;
   text-decoration: none;
@@ -189,14 +190,52 @@ button:active,
   transition: background 0.3s, color 0.3s;
 }
 
-/* Hover Effect */
 .navbar a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #00d2ff;
 }
 
-/* Active Link Style */
 .navbar a.active {
   color: #00d2ff;
   font-weight: 600;
+}
+
+/* === Fade-in Effect for Scroll === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Sections === */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  background: rgba(20, 20, 20, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
