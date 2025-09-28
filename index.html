@@ -3,128 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SolarMC – Request a Server</title>
+  <title>SolarMC – Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="content card">
-    <!-- Corrected Logo Path -->
-    <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="request.html">Request</a>
+    <a href="about.html">About</a>
+  </div>
 
-    <h1>SolarMC – Server Request</h1>
+  <div class="overlay"></div>
+
+  <div class="content card">
+    <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
+    <h1>Welcome to SolarMC</h1>
     <p>
-      We’re a small team of just 5 people. Emails won’t be delivered immediately 
-      because we also have to live our lives.  
-      For faster support, please use our 
-      <a href="YOUR_DISCORD_LINK" target="_blank">Discord server</a>.
+      We create custom Minecraft server packages for you — complete with mods, plugins, resource packs,  
+      and everything you need to jump right into your world.
     </p>
 
-    <form action="https://formspree.io/f/manpqjqz" method="POST" class="request-form" enctype="multipart/form-data">
-      <label>Minecraft Edition:</label>
-      <div class="custom-select">
-        <select name="edition" required>
-          <option value="java">Java</option>
-          <option value="bedrock">Bedrock</option>
-        </select>
-      </div>
-
-      <label>Server Type:</label>
-      <div class="custom-select">
-        <select name="type" required>
-          <option value="paper">Paper</option>
-          <option value="spigot">Spigot</option>
-          <option value="bukkit">Bukkit</option>
-          <option value="purpur">Purpur</option>
-          <option value="forge">Forge</option>
-          <option value="fabric">Fabric</option>
-          <option value="vanilla">Vanilla</option>
-        </select>
-      </div>
-
-      <label>Version:</label>
-      <div class="custom-select">
-        <select name="version" required>
-          <optgroup label="1.16">
-            <option value="1.16.5">1.16.5</option>
-            <option value="1.16.6">1.16.6</option>
-            <option value="1.16.7">1.16.7</option>
-            <option value="1.16.8">1.16.8</option>
-            <option value="1.16.9">1.16.9</option>
-            <option value="1.16.10">1.16.10</option>
-          </optgroup>
-          <optgroup label="1.17">
-            <option value="1.17.1">1.17.1</option>
-            <option value="1.17.2">1.17.2</option>
-            <option value="1.17.3">1.17.3</option>
-            <option value="1.17.4">1.17.4</option>
-            <option value="1.17.5">1.17.5</option>
-            <option value="1.17.6">1.17.6</option>
-            <option value="1.17.7">1.17.7</option>
-            <option value="1.17.8">1.17.8</option>
-            <option value="1.17.9">1.17.9</option>
-            <option value="1.17.10">1.17.10</option>
-          </optgroup>
-          <optgroup label="1.18">
-            <option value="1.18.1">1.18.1</option>
-            <option value="1.18.2">1.18.2</option>
-            <option value="1.18.3">1.18.3</option>
-            <option value="1.18.4">1.18.4</option>
-            <option value="1.18.5">1.18.5</option>
-            <option value="1.18.6">1.18.6</option>
-            <option value="1.18.7">1.18.7</option>
-            <option value="1.18.8">1.18.8</option>
-            <option value="1.18.9">1.18.9</option>
-            <option value="1.18.10">1.18.10</option>
-          </optgroup>
-          <optgroup label="1.19">
-            <option value="1.19.1">1.19.1</option>
-            <option value="1.19.2">1.19.2</option>
-            <option value="1.19.3">1.19.3</option>
-            <option value="1.19.4">1.19.4</option>
-            <option value="1.19.5">1.19.5</option>
-            <option value="1.19.6">1.19.6</option>
-            <option value="1.19.7">1.19.7</option>
-            <option value="1.19.8">1.19.8</option>
-            <option value="1.19.9">1.19.9</option>
-            <option value="1.19.10">1.19.10</option>
-          </optgroup>
-          <optgroup label="1.20">
-            <option value="1.20.1">1.20.1</option>
-            <option value="1.20.2">1.20.2</option>
-            <option value="1.20.3">1.20.3</option>
-            <option value="1.20.4">1.20.4</option>
-            <option value="1.20.5">1.20.5</option>
-            <option value="1.20.6">1.20.6</option>
-            <option value="1.20.7">1.20.7</option>
-            <option value="1.20.8">1.20.8</option>
-            <option value="1.20.9">1.20.9</option>
-            <option value="1.20.10">1.20.10</option>
-          </optgroup>
-          <optgroup label="1.21">
-            <option value="1.21.1">1.21.1</option>
-            <option value="1.21.2">1.21.2</option>
-            <option value="1.21.3">1.21.3</option>
-            <option value="1.21.4">1.21.4</option>
-            <option value="1.21.5">1.21.5</option>
-            <option value="1.21.6">1.21.6</option>
-            <option value="1.21.7">1.21.7</option>
-            <option value="1.21.8">1.21.8 (Latest)</option>
-          </optgroup>
-        </select>
-      </div>
-
-      <label>Plugins / Mods / Resource Packs:</label>
-      <textarea name="extras" rows="4" placeholder="List any plugins, mods, or packs you want installed"></textarea>
-
-      <label>Email Address:</label>
-      <input type="email" name="email" required>
-
-      <label>Upload Paid Plugin (Optional):</label>
-      <input type="file" name="plugin_upload">
-
-      <button type="submit">Submit Request</button>
-    </form>
+    <nav class="nav-links">
+      <a href="request.html" class="nav-button">Request a Server</a>
+      <a href="about.html" class="nav-button">About Us</a>
+    </nav>
   </div>
 </body>
 </html>
