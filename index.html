@@ -3,66 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SolarMC – Home</title>
+  <title>SolarMC – Minecraft Server Requests</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="request.html">Request Now</a>
-  </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#hero" class="active">Home</a>
+    <a href="#services">Services</a>
+    <a href="#request">Request Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero fade-in">
-    <div class="overlay"></div>
-    <div class="content card">
+  <section id="hero" class="fade-in">
+    <div class="content">
       <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
       <h1>Welcome to SolarMC</h1>
       <p>
-        We create custom Minecraft server packages for you — complete with mods, plugins, resource packs,  
-        and everything you need to jump right into your world.
+        We create fully custom Minecraft servers for you — including all files, plugins, mods, 
+        and resource packs you need.  
+        Just request your server and we'll handle the rest.
       </p>
-      <a href="request.html"><button>Request Now</button></a>
+      <button onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">
+        Request Now
+      </button>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="features fade-in">
-    <h2>Why Choose SolarMC?</h2>
+  <!-- Services Section -->
+  <section id="services" class="fade-in">
+    <h2>Our Services</h2>
     <div class="feature-cards">
       <div class="feature-card">
-        <h3>Custom Builds</h3>
-        <p>We tailor your Minecraft server exactly to your specifications with all mods, plugins, and packs you want.</p>
+        <h3>Custom Minecraft Servers</h3>
+        <p>Full setups with your chosen mods, plugins, and configurations.</p>
       </div>
       <div class="feature-card">
-        <h3>Full Support</h3>
-        <p>Our team is here to help with setup and issues so you can focus on playing.</p>
+        <h3>Mods & Plugins</h3>
+        <p>Install the exact mods and plugins you want with no hassle.</p>
       </div>
       <div class="feature-card">
-        <h3>Fast Delivery</h3>
-        <p>Your server package is delivered quickly, so you can start building sooner.</p>
+        <h3>Resource Packs</h3>
+        <p>We integrate your chosen resource packs for the best experience.</p>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about fade-in">
-    <h2>About Us</h2>
-    <p>
-      SolarMC is a small but dedicated team passionate about creating high-quality custom Minecraft server experiences.  
-      Whether you need a modded world or a pure vanilla experience, we’ll make it happen.
-    </p>
+  <!-- Request Form Section -->
+  <section id="request" class="fade-in">
+    <div class="content">
+      <h2>Request Your Server</h2>
+      <p>Fill out the form below and we’ll build your server exactly how you want it.</p>
+      <form action="https://formspree.io/f/manpqjqz" method="POST" class="request-form" enctype="multipart/form-data">
+        <label>Minecraft Edition:</label>
+        <select name="edition" required>
+          <option value="java">Java</option>
+          <option value="bedrock">Bedrock</option>
+        </select>
+
+        <label>Server Type:</label>
+        <select name="type" required>
+          <option value="paper">Paper</option>
+          <option value="spigot">Spigot</option>
+          <option value="bukkit">Bukkit</option>
+          <option value="purpur">Purpur</option>
+          <option value="forge">Forge</option>
+          <option value="fabric">Fabric</option>
+          <option value="vanilla">Vanilla</option>
+        </select>
+
+        <label>Version:</label>
+        <select name="version" required>
+          <option value="1.20.1">1.20.1</option>
+          <option value="1.20.2">1.20.2</option>
+          <option value="1.20.3">1.20.3</option>
+        </select>
+
+        <label>Plugins / Mods / Resource Packs:</label>
+        <textarea name="extras" rows="4" placeholder="List any plugins, mods, or packs you want installed"></textarea>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Upload Paid Plugin (Optional):</label>
+        <input type="file" name="plugin_upload">
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact fade-in">
-    <h2>Get in Touch</h2>
-    <p>Want to know more or request a server? Click the button below!</p>
-    <a href="request.html"><button>Request Now</button></a>
+  <section id="contact" class="fade-in">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Have questions? Join our Discord or email us directly.</p>
+      <a href="YOUR_DISCORD_LINK" target="_blank">
+        <button>Join Discord</button>
+      </a>
+    </div>
   </section>
 
-  <script src="fadein.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
+
