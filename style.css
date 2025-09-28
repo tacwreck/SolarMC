@@ -138,13 +138,13 @@ input[type="file"]::file-selector-button:hover {
 button,
 .request-form button {
   display: inline-block;
-  background: linear-gradient(135deg, #00d2ff, #00b1e7); /* Cyan-Teal gradient */
+  background: linear-gradient(135deg, #00d2ff, #00b1e7);
   color: #fff;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 12px 28px;
   border: none;
-  border-radius: 9999px; /* Fully rounded pill */
+  border-radius: 9999px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 178, 255, 0.3);
@@ -161,3 +161,33 @@ button:active,
   transform: translateY(0);
   box-shadow: 0 3px 8px rgba(0, 178, 255, 0.3);
 }
+
+/* === Navigation Bar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.85);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
