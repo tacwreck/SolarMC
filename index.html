@@ -7,26 +7,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
+
+  <!-- Navigation Bar -->
   <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="request.html">Request</a>
-    <a href="about.html">About</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="request.html">Request Now</a>
   </div>
 
-  <div class="overlay"></div>
-
-  <div class="content card">
-    <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
-    <h1>Welcome to SolarMC</h1>
-    <p>
-      We create custom Minecraft server packages for you — complete with mods, plugins, resource packs,  
-      and everything you need to jump right into your world.
-    </p>
-
-    <nav class="nav-links">
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <div class="overlay"></div>
+    <div class="content card">
+      <img src="assets/IMG_3537.png" alt="SolarMC Logo" class="logo">
+      <h1>Welcome to SolarMC</h1>
+      <p>
+        We create custom Minecraft server packages for you — complete with mods, plugins, resource packs,  
+        and everything you need to jump right into your world.
+      </p>
       <a href="request.html"><button>Request Now</button></a>
-    </nav>
-  </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features fade-in">
+    <h2>Why Choose SolarMC?</h2>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3>Custom Builds</h3>
+        <p>We tailor your Minecraft server exactly to your specifications with all mods, plugins, and packs you want.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Full Support</h3>
+        <p>Our team is here to help with setup and issues so you can focus on playing.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Fast Delivery</h3>
+        <p>Your server package is delivered quickly, so you can start building sooner.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about fade-in">
+    <h2>About Us</h2>
+    <p>
+      SolarMC is a small but dedicated team passionate about creating high-quality custom Minecraft server experiences.  
+      Whether you need a modded world or a pure vanilla experience, we’ll make it happen.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact fade-in">
+    <h2>Get in Touch</h2>
+    <p>Want to know more or request a server? Click the button below!</p>
+    <a href="request.html"><button>Request Now</button></a>
+  </section>
+
+  <script src="fadein.js"></script>
 </body>
 </html>
