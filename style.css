@@ -189,12 +189,16 @@ button:active,
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* === Why Choose Us Section === */
+/* === Why Choose Us Card Section === */
 .why-choose-us {
   padding: 40px 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
+  width: 90%;
+  margin: 40px auto;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
 .why-choose-us h2 {
